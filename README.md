@@ -42,11 +42,11 @@ to the month in Austin, Texas.
 
 ``` r
 ggplot(txhousing2, aes(x = month, y = sales)) +
-geom_col() +  
+geom_col() + 
 labs(x = "Month", y = "# of Houses Sold") +
 ggtitle("2002 House Sales in Austin, TX")
 ```
 
-![](README_files/figure-gfm/pressure-1.png)<!-- -->
+![](README_files/figure-gfm/housesales.png)<!-- -->
 
 **Thank You for Viewing**
