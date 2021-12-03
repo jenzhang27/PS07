@@ -60,6 +60,6 @@ labs(x = "Month", y = "# of Houses Sold") +
 ggtitle("2002 House Sales in Austin, TX")
 ```
 
-![](README_files/figure-gfm/pressure-1.png)<!-- -->
+![](README_files/figure-gfm/housesales.png)<!-- -->
 
 **Thank You for Viewing**
