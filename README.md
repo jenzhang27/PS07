@@ -14,20 +14,6 @@ data so it’s easier to work with:
 ``` r
 library(ggplot2)
 library(dplyr)
-```
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
-``` r
 txhousing2 <- txhousing %>% 
   filter(year == "2002") %>% 
   filter(city == "Austin")
