@@ -14,6 +14,7 @@ data so it’s easier to work with:
 ``` r
 library(ggplot2)
 library(dplyr)
+
 txhousing2 <- txhousing %>% 
   filter(year == "2002") %>% 
   filter(city == "Austin")
