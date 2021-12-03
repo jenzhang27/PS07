@@ -1,4 +1,4 @@
-**JenZ’s Webpage**
+**Real Estate Sales in Austin, TX**
 ================
 
 ## INTRO
@@ -14,7 +14,20 @@ data so it’s easier to work with:
 ``` r
 library(ggplot2)
 library(dplyr)
+```
 
+    ## 
+    ## Attaching package: 'dplyr'
+
+    ## The following objects are masked from 'package:stats':
+    ## 
+    ##     filter, lag
+
+    ## The following objects are masked from 'package:base':
+    ## 
+    ##     intersect, setdiff, setequal, union
+
+``` r
 txhousing2 <- txhousing %>% 
   filter(year == "2002") %>% 
   filter(city == "Austin")
@@ -42,11 +55,11 @@ to the month in Austin, Texas.
 
 ``` r
 ggplot(txhousing2, aes(x = month, y = sales)) +
-geom_col() + 
+geom_col() +  
 labs(x = "Month", y = "# of Houses Sold") +
 ggtitle("2002 House Sales in Austin, TX")
 ```
 
-![](README_files/figure-gfm/housesales.png)<!-- -->
+![](README_files/figure-gfm/pressure-1.png)<!-- -->
 
 **Thank You for Viewing**
