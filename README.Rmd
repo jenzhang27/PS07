@@ -1,0 +1,40 @@
+---
+title: "**JenZ's Webpage**"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## INTRO
+
+This is an short project that displays the real estate sales and details in Austin, Texas.
+
+## COOL CODE
+
+Here is some cool code that loads the packages needed and wrangles the data so it's easier to work with:
+
+```{r cars}
+library(ggplot2)
+library(dplyr)
+
+txhousing2 <- txhousing %>% 
+  filter(year == "2002") %>% 
+  filter(city == "Austin")
+
+glimpse(txhousing2)
+```
+
+## PLOTS
+
+Here is the final plot and the code associated with creating the txhousing2 dataset that shows you how the sale of houses vary according to the month in Austin, Texas.
+
+```{r pressure, echo=TRUE}
+ggplot(txhousing2, aes(x = month, y = sales)) +
+geom_col() +  
+labs(x = "Month", y = "# of Houses Sold") +
+ggtitle("2002 House Sales in Austin, TX")
+```
+
+**Thank You for Viewing**
